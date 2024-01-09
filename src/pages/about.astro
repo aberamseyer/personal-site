@@ -1,0 +1,58 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '..//components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const alt = `Me sitting in a chair, lying across a table in utter exhaustion outside.`
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE + ' - About'} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<h2>About Me</h2>
+				<p>
+					<img src="/snooze.jpg" alt={alt} title={alt}>
+					Computers wowed me from the beginning back when my brother and I discovered these things called "batch" files
+					that we could type a few strange words into and make the computer do funny things. In those days, peak programming
+					was making a terminal pop up and print "DELETING FILE: " followed by random numbers to scare the user.
+					Of course, no one else used our harmless virus, and this program served only for us to laugh and show me the magic
+					that brought me to love coding.
+				</p>
+				<p>
+					Code works; computers aren't wrong: that's what makes it all worth it for me. People are finicky or just honestly mistaken, giving
+					the right answer sometimes and the wrong answer others, even if it's someone I know and trust. We're just error-prone, but computers aren't.
+				</p>
+				<p>
+					Computers get it right, every time, and I love it. If the output is wrong, I'm wrong, not the computer. There's something
+					safe about trusting a computer to do exactly what you tell it to do, following you to fault. The corollary to this is that
+					once the code is right, it's always right. Then I can put it in a <code>for</code> loop and have it be right 1,000,000 times in a row.
+				</p>
+				<p>
+					Isn't that magical?
+				</p>
+				<p>
+					Thanks for joining me on this journey.
+				</p>
+				<p>
+					Check out the the <a href='/work/'>work</a> page to see some things I've worked on.
+				</p>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	img {
+		margin-right: 1.5em;
+		width: 240px;
+		height: auto;
+		float: left;
+	}
+</style>

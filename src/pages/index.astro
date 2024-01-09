@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Abe Ramseyer</h1>
+			<p>I'm a full stack software engineer endeavoring to learn to write perfect code that works without issue.</p>
+			<p>This site will be closed down when I reach that achievement.</p>
+			<p>
+				Until then, this site serves as a log of some of the projects I've experimented with. Many are half (or a quarter) complete and abandoned,
+				others are very fleshed-out and serving happy customers in production. Sometimes I enjoyed a project for a company so much
+				that I post about it here, sans specifics. When it comes to personal work, I'll keep working on something until it starts to feel
+				like work. Sometimes that timespan lasts hours, sometimes years.
+			</p>
+			<p>
+				This is NOT technical writing. It's a portfolio and a place to retrospectively collect my thoughts so I can learn from where I've been.
+			</p>
+			<p>I'm still a relatively newcommer to the dev world with just a few years under my belt after getting the degree, but I'm always eager to learn
+				through experimenting with new technologies read articles to see technology come alive in new ways. Read more about my work <a href="/work">here</a>.
+			</p>
+			<p>
+				You can see a terser version of the posts under my work in my current <a href='/Resume.pdf'>resume</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
