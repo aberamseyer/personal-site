@@ -5,7 +5,7 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/">{SITE_TITLE}</a> <a href="/rss.xml"><img src='/rss.png'></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/work">Work</HeaderLink>
@@ -14,6 +14,10 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
+	header img {
+		display inline;
+		width: 14px;
+	}
 	header {
 		margin: 0;
 		padding: 0 1em;
