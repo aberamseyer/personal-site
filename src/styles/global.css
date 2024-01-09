@@ -39,7 +39,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.7;
 }
 main {
@@ -91,10 +91,10 @@ p {
 }
 textarea {
 	width: 100%;
-	font-size: 16px;
+	font-size: 14px;
 }
 input {
-	font-size: 16px;
+	font-size: 14px;
 }
 table {
 	width: 100%;
@@ -105,7 +105,7 @@ img {
 	border-radius: 8px;
 }
 code {
-	padding: 2px 5px;
+	padding: 1px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
@@ -128,7 +128,7 @@ hr {
 }
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	main {
 		padding: 1em;

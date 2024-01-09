@@ -1,11 +1,11 @@
 ---
 title: 'Digital Asset Management'
 description: 'A system for storing and retrieving files. Like a computer, but its not on your computer.'
-pubDate: 'Dec 08 2023'
-heroImage: '/explorer.jpg'
+pubDate: 'Jul 12 2023'
+heroImage: '/img/explorer.jpg'
 ---
 
-###### Note: all images are of other file explorers, not the system I implemented.
+###### Note: As this was work done for a company, all images are of other systems, not the one I implemented.
 
 This was the first project that I got to own at the first company I worked at. "Digital Asset Management", or of course, the DAM system. "Own" here means: have the final say in the system's architecture (and how it will fit into exiting systems) and modeling the domain.
 
@@ -22,19 +22,6 @@ After more time in the project and experiencing all that goes into an interface,
 The experience there was that the interface we had at the end still looked similar to the original, but with a multitude of buttons here and there to cover everything.
 
 This project was revisted after months in production, and an entirely new frontend had to be built.
-
-## Tech Stack
-
-We were a pretty simple dev shop with an internal expected userbase in the 100s. Though it was designed to scale to thousands, I don't imagine the system faring well under the load of millions. All of this was considered when selecting the technologies used:
-1. API: php
-2. Frontend: Vue.js
-3. Job scheduler: crond (Ol' Faithful)
-4. Server: Apache
-5. Searching: Elasticsearch
-6. Blob storage: S3
-7. ML Tagging: Google Cloud Vision API
-8. Async File processing: Lambda]
-
 
 ## Features
 A short list I remember implementing:
@@ -57,9 +44,22 @@ A short list I remember implementing:
 
 For as much hate as I've heard it get over the years, php is suprisingly capable.
 
-![Interface implications](/confusion.jpg)
+![Interface implications](/img/confusion.jpg)
 
 This project has thus ruined casually looking at file browsers for me. I'm fascinated by all the complexity and design that packs a multitude of features into such a small space in front of you, all while remaining as discoverable as possible.
+
+## Tech Stack
+
+We were a pretty simple dev shop with an internal expected userbase in the 100s. Though it was designed to scale to thousands, I don't imagine the system faring well under the load of millions. All of this was considered when selecting the technologies used:
+1. API: php
+2. Frontend: Vue.js
+3. Job scheduler: crond (Ol' Faithful)
+4. Server: Apache
+5. Searching: Elasticsearch
+6. Blob storage: AWS S3
+7. ML Tagging: Google Cloud Vision API
+8. Async File processing: Lambda, using NodeJS
+9. Metadata: existing MySQL instance
 
 ## Regrets
 
