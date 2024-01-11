@@ -26,11 +26,11 @@ Between Django and storing two versions of each book, the database is only 395 M
 
 ![Search](/img/books-2.gif)
 
-Search was implemented using basic SQLite full-test search, no fuzziness or anything.
+Search was implemented using basic SQLite full-text search, no fuzziness or anything.
 
-Playing with the assets gave me some more practice with imagemagick and ffmpeg, which seems to come up naturally throughout a web developer's life. They're those technologies you never realize exist at first, but then you see them popping up in almost any project that involves media, and shudder to think what you would do without them. I'd probably be back using php's `imagecreatetruecolor()` and all its friends. No thank you.
+Playing with the assets gave me some more practice with `imagemagick` and `ffmpeg`, which seems to come up naturally throughout a web developer's life. They're those technologies you never realize exist at first, but then you see them popping up in almost any project that involves media, and shudder to think what you would do without them. I'd probably be back using php's `imagecreatetruecolor()` and all its friends. No thank you.
 
-Another motivation for the rewrite was that so much of my experience has been in Nodejs and php that I wanted a project to learn Python as a web development language too. Despite my aversion to complexity, I knew Flask and Django are popular, so I pulled up the docs to give myself experience in something more marketable.
+Another motivation for the rewrite was that so much of my experience has been in Nodejs and php that I wanted a project to learn Python as a web development language too. Despite my aversion to unecessary complexity for smaller applications, I knew Flask and Django are popular, so I pulled up the docs to give myself experience in something more marketable.
 
 This and the [bible research tool](/work/bible-research-tool) were both heavy exercises in text parsing. I've had enough experience with regex to weasel my way through megabytes worth of text.
 

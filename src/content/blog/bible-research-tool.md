@@ -28,9 +28,9 @@ I am not about to have incomplete notes. A few words in quotations may not captu
 ![Searching](/img/bible-lookup.gif)
 
 #### A Journey in Parsing
-In that gif, you can see text with superscripts, footnotes, cross-references, and verses that link to places. The source I had for all of this came as plain text. Everything was smooshed together in disparate places, seemingly having little rhyme or reason.
+In the first gif, you can see text with superscripts, footnotes, cross-references, and verses that link to places. The source I had for all of this came as plain text. Everything was smooshed together in disparate places, seemingly having little rhyme or reason.
 
-The first code I wrote for this project was simply a text file parser, that I ultimately ended up writing to run in multiple processes because it was so inefficient at finding the data it needed to, plus there was competition between processes for database access. I think the final script took a few hours to run. I had a separate process for every book, and ultimately the length of time it took was the length of time it took for that single longest book to be parsed (looking at you, Jeremiah).
+The first code I wrote for this project was simply a text file parser, that I ultimately ended up writing to run in multiple processes because it was so inefficient at finding the data it needed to, plus there was competition between processes for database access. I think the final script took a few hours to run. I had a separate process for every book, and ultimately the length of time it took was the length of time it took for that single longest book to be parsed (looking at you, Psalms).
 
 ## Tech Stack
 This thing went through many iterations of experimenting with different technologies. At one point I was generating it as a static site, comparing page load times between disk access vs serving out of Redis. Other times it had [analytics](https://plausible.io). One time I was focusing on SEO optimization, at the end I pulled it completely from the public web to be just for my personal use. The point is to say I had the opportunity to play with a lot of techonlogies in making this happen, and I'm happy about how it iteratively got better and ultimately got to where it is today.
