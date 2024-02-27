@@ -8,7 +8,7 @@ This is the most recent project I've worked on. My current work is with a Christ
 
 The system allows the staff members to create a reading schedule ahead of time using a calendar interface.
 
-Then, as the days go by, the users access the website, the daily portion is displayed, and there's a bit button that says "Done." Reading finished and button clicked, the system notes when and who's been keeping up. For our particular club, we incentivize the students who have read every portion for the current week, so the system tracks each reader's weekly progress.
+Then, as the days go by, the users access the website, the daily portion is displayed, and there's a big button that says "Done." Reading finished and button clicked, the system notes when and who's been keeping up. For our particular club, we incentivize the students who have read every portion for the current week, so the system tracks each reader's weekly progress.
 
 ![Schedule Creation](/img/brc-calendar.gif)
 
