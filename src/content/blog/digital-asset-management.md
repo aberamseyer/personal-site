@@ -32,7 +32,7 @@ A short list I remember implementing:
 2. Public and private file sharing, implying also:
     - Permission management
     - User groups
-    - Application credentials for hosting other internal application's digital assets.
+    - Application credentials for hosting other internal applications' digital assets.
 3. Automatic tagging of images
 4. Search
     - Fuzzy
@@ -42,7 +42,7 @@ A short list I remember implementing:
 7. Image rotation
 8. Archive extraction
 
-For as much hate as I've heard it get over the years, php is suprisingly capable.
+For as much hate as it's received over the years, php is suprisingly capable.
 
 ![Interface implications](/img/confusion.jpg)
 
@@ -74,7 +74,7 @@ A few particular things I particularly enjoyed implementing:
 
 This was not merely the photographer's dumping ground for their SD card, but moreso it even served as a solution to any future project's blob storage needs.
 
-A html widget snipped was designed to be embeddable in future (and existing) applications that would allow them to not have any concerns about their file storage.
+A html widget was designed to be embeddable in future (and existing) applications that would allow them to not have any concerns about their file storage.
 
 A custom context menu with various file operations. It's incredible how large the scope is for [what we demand in a file browser](https://en.wikipedia.org/wiki/File_Explorer#Extensibility):
 ![Wikipedia scope creep](/features.png)
