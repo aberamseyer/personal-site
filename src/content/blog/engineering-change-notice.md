@@ -25,9 +25,9 @@ The system was essentially two views:
 
 ## Tech Stack
 1. AWS Appsync
-    - Authentication
-    - API: GraphQL
-    - Backend–Lambda, using NodeJS
+    - Authentication: existing auth layer
+    - API: GraphQL, using data resolvers connected to MySQL
+    - Backend: Lambda, using NodeJS
 2. Database: existing MySQL instance
 3. Frontend: Vue.js + a CSS framework, I think it was called Materialize but I may be mistaken
 4. PDF processing: PDF.js
@@ -40,6 +40,6 @@ I got to make a system that looked amazing! While the design of previously imple
 
 ## Regrets
 
-Don't try to re-solve the n+1 problem. I at one point had a perfectly working system that should have been extremely snappy, but it just became slower and slower the more documents were fed into the system. Pagination was implemented as a band-aid fix, but it still wasn't as performant as I knew it would be if built with a simpler RESTful API. In the world of NoSQL it may have worked, but in the relational database schema I had designed, it was non-trival to fix on my own. I considered drop-in systems like [Hasura](https://hasura.io) for the API, but the added tech stack fragmentation was not desirable to the client.
+Be carefule about the n+1 problem! It's one of the most obvious footguns out there for someone coming from a REST background, and unfortunately it threw me for a loop for a couple days. There were some slowdowns due to the way the database resolvers were implemented, but nothing too egregious. Pagination was implemented to mitigate it, and the result was something comparable to a typical REST-ful API. Additionally, other people have success avoiding it with eager querying, batching requests, caching data (redis/memcached), and [certain libraries](https://github.com/graphql/dataloader). While in the world of NoSQL performance may have been free, in a relational database, it was not as smooth of an implementation. I considered drop-in systems like [Hasura](https://hasura.io) for the API, but the added tech stack fragmentation was not desirable to the client.
 
-Refresh tokens don't play that nicely in AppSync. I would wait for the technology to mature more before trying to build a system around it. I fell for the excitement of it while attending the previous AWS re:Invent conference.
+Refresh tokens did not play very nicely with me in AppSync. Today, I would wait for the technology to mature a couple years before trying to build a system around it. I used it after receiving inspiration from a recent AWS re:Invent conference, and I do not regret that choice, but my immediate feeling while wokring was to avoid recommending it as a magic all-batteries-included solution to a system.
