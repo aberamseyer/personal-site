@@ -16,7 +16,7 @@ I owe the branding and the colorful badges to another team member with a design 
 
 ## Features
 
-I had a lot of fun with this project. It wasn't my primary job description to be the club's Web Developer, but I'm happy I could offer my skills to develop something lightweight. This project's MVP took off in about a week of work, with further refinement and kinks being worked out with minimal time spent over the coming months. Today, I don't touch it, and it hums along perfectly.
+I had a lot of fun with this project. As someone splitting their time between development and the typical duties of the club staff member, I was very happy I could offer my skills to develop something used by everyone. This project's MVP took off in about a week of work, with further refinement and kinks being worked out with minimal time spent over the coming months. Today, I don't touch it, and it hums along perfectly.
 
 1. Customizable reading schedules
 2. Daily emails containing that day's portion to read–no website access needed besides clicking "Done"
