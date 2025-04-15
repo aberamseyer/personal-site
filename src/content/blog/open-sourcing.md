@@ -33,8 +33,8 @@ Yet here it is in all its glory! It runs, it moves, it's not very maintainable, 
 on things in my own time. In this case, it was many many (MANY) hours of my own time.
 
 In retrospect, the codebase *is* optimized. It's optimized for the only maintainer. Not for me to make a company out of it because that was never the goal. It's optimized
-for me to get back into it and easily jump between functions in the most basic architecture that can support it. Because, be honest: who honestly needs or wants to wrangle yaml
-and `kubectl` on a project you only touch every other month to fix one bug?) I don't even remember everything going on in the codebase at that point, so I just write enough personal
+for me to get back into it and easily jump between functions in the most basic architecture that can support it. Because, be honest: who needs or wants to wrangle yaml
+and `kubectl` on a project you only touch every other month to fix one bug? I don't even remember everything going on in the codebase at that point, so I just write enough personal
 documentation to send me in the right direction.
 
 ### Why would you embarrass yourself by publishing this code?
@@ -54,7 +54,7 @@ what you built having skipped the "proper engineering" step. I assume that's why
 Funnily enough, at this point I suppose I'm qualified for those roles because I've done all the same things those founding engineers are doing under the pressure of releasing the MVP.
 
 Honestly, I don't really care if no one else can figure out how to get this code working. They don't need to. Like many journal paper these days, often times the only one
-who can implement them is the original author. It's pleasing to think that my quality of work is on par with PhD students; I never thought I was as smart as them.
+who can implement a publication is the original author. It's pleasing to think that my kind of work is on par with many PhD students; I never imagined I was as smart as the academics.
 
 # More to come
 I'm using this post a sort of promise to myself that I'll also push the code for my other multi-year passion project, the [Bible Research Tool](/work/bible-research-tool),
